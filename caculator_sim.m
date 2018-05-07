@@ -1,6 +1,7 @@
 %this is an caculator application imitating the iPhone's,but it is stronger
 %because it has more function like solving equations,drawing functional
 %image,fitting image,ect.
+%Anthor:LWhatever_WHU
 
 function varargout = caculator_sim(varargin)
 % CACULATOR_SIM MATLAB code for caculator_sim.fig
