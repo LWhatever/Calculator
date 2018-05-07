@@ -1,5 +1,7 @@
 %this application can solve first-order and second-order
 %differential equations.
+%Anthor:LWhatever_WHU
+
 
 function varargout = DSolve(varargin)
 % DSOLVE MATLAB code for DSolve.fig
@@ -91,7 +93,7 @@ y0=get(handles.edit_y0,'string');                                               
 mid=get(handles.edit_middle,'string');                                                          %get the intermediate variable
 Dy0=get(handles.edit_Dy0,'string');                                                              %get the initial value of the first-order derivative
 if isempty(Dy)&isempty(y0)&isempty(mid)&isempty(Dy0)                          %check the data
-    msgbox('Please enter the data£¡','warning');
+    msgbox('Please enter the dataÂ£Â¡','warning');
     return;
 elseif isempty(y0)&isempty(mid)&isempty(Dy0)                                          %dsolve(Dy) or dsolve(D2y)
     y=char(simplify(dsolve(Dy)));
@@ -111,7 +113,7 @@ else                                                                            
     y=char(simplify(dsolve(Dy,y0,Dy0,mid)));
 end
 if strcmp(y,'matrix([])')                                                                                     %occurs conflics or error input
-    msgbox('There are erros when entering the data£¬pleas check£¡','warning');
+    msgbox('There are erros when entering the dataÂ£Â¬pleas checkÂ£Â¡','warning');
 else
     set(handles.edit_y,'string',y);                                                                     %show the answer
 end
