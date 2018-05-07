@@ -1,6 +1,7 @@
 %this application can draw functional image the user input
 %it also can draw a fitting line according to the co-ordinate data the user
 %input.
+%Anthor:LWhatever_WHU
 
 
 function varargout = draw_sim(varargin)
