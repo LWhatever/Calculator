@@ -1,6 +1,7 @@
 %this application can solve several kinds of simultaneous equations,
 %and it can solve quadratic equation at most.
 %It can only solve definite equations.
+%Anthor:LWhatever_WHU
 
 function varargout = Solve_sim(varargin)
 % SOLVE_SIM MATLAB code for Solve_sim.fig
@@ -73,7 +74,7 @@ function varargout = Solve_sim_OutputFcn(hObject, eventdata, handles)
 % hObject    handle to figure
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-hs=helpdlg({'Supporting Model£º';'a*x+b*y+c*z=0 & a*x^2+b*x+c=0,'},'tip');  %inform the user of the limitation
+hs=helpdlg({'Supporting ModelÂ£Âº';'a*x+b*y+c*z=0 & a*x^2+b*x+c=0,'},'tip');  %inform the user of the limitation
 ht = findobj(hs, 'Type', 'text');
 set(ht, 'FontSize', 10, 'Unit', 'normal');
 
@@ -92,7 +93,7 @@ str2=get(handles.edit2,'string');                                               
 str3=get(handles.edit3,'string');                                               %get equation three
 str4=get(handles.edit4,'string');                                               %get equation four
 if str1==' '&str2==' '&str3==' '&str4==' '                                   %check if the equation is input
-    msgbox('Please enter the data£¡','warning');
+    msgbox('Please enter the dataÂ£Â¡','warning');
 elseif str2==' '&str3==' '&str4==' '                                            %solve a equation
     [x]=solve(str1);
     if length(x)==2
